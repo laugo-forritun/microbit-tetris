@@ -21,10 +21,10 @@ function draw() {
 }
 
 function handle_input() {
-	if (input.buttonIsPressed(Button.A)) {
+	if (input.buttonIsPressed(Button.A) && screen_x > 0) {
 		screen_x -= 1
 	}
-	if (input.buttonIsPressed(Button.B)) {
+	if (input.buttonIsPressed(Button.B) && screen_x + SCREEN_WIDTH < WIDTH) {
 		screen_x += 1
 	}
 }
